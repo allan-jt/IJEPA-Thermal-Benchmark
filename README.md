@@ -1,0 +1,1 @@
+# IJEPA-Thermal-Benchmark
