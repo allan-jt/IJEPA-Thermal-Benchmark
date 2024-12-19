@@ -1,1 +1,7 @@
 # IJEPA-Thermal-Benchmark
+
+In 2023, Meta introduced Image-based Joint-Embedding Predictive Architecture (I-JEPA), a computer vision model based on the Vision Transformer. It was designed to effectively capture high-level semantic representations of features in images by making predictions in the latent space during training. Indeed, results from experiments they conducted showed that I-JEPA outperformed other popular computer vision models for downstream tasks such as local prediction and classification.  
+
+Motivated by these promising results, we aimed to further evaluate I-JEPA's learned representations for the task of object classification in thermal images. These images pose unique challenges because the thermal signatures of objects lack the fine-grained details present in RGB images, making classification difficult. By evaluating I-JEPA on these images and benchmarking its performance against other computer vision models, we were able to assess how well its learned high-level representations transferred to other image modalities, allowing us to assess its robustness.
+
+Our experimental results demonstrated that our classification head effectively utilized I-JEPA's learned representations for classifying objects in thermal images. Notably, it outperformed the Vision Transformer models that the original I-JEPA paper used for benchmarking. However, it was not the top-performing model, as both the Swin Transformer and DINO models achieved significantly better results.
